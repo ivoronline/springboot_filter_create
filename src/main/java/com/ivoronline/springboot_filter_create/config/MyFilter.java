@@ -20,6 +20,7 @@ public class MyFilter implements Filter {
     System.out.println(request.getServerName()); //localhost
     System.out.println(request.getServerPort()); //8080
 
+    //FORWARD REQUEST
     filterchain.doFilter(request, response);
 
   }
